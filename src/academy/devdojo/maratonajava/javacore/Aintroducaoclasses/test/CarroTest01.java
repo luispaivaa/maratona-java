@@ -6,6 +6,7 @@ public class CarroTest01 {
     public static void main(String[] args) {
         Carro carro1 = new Carro();
         Carro carro2 = new Carro();
+        Carro carro3 = new Carro();
 
         carro1.nome = "Celta";
         carro1.marca = "Chevrolet";
@@ -20,6 +21,11 @@ public class CarroTest01 {
         System.out.println("Nome: " + carro1.nome + " " + "Marca: " + carro1.marca + " " + "Ano: " + carro1.ano);
         System.out.println("----------------------------------------------------------------------------------------");
         System.out.println("Nome: " + carro2.nome + " " + "Marca: " + carro2.marca + " " + "Ano: " + carro2.ano);
+
+        System.out.println("Testando a função toString()  :");
+        System.out.println(carro1.toString());
+        System.out.println(carro3.toString()); // atribui valores padrãom pois não foi atribuido nenhum valor aos seus atributos.
+
 
     }
 }

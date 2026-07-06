@@ -8,5 +8,16 @@ public class CalculadoraTest03 {
 
         double result = calculadora.divideDoisNumeros(20,2);
         System.out.println(result);
+
+        System.out.println("--------------------------------");
+
+        calculadora.imprimeDivisaoDeDoisNumeros(14, 0);
+
+        System.out.println("--------------------------------");
+
+        double resultado = calculadora.calculaDesconto(100, 5);
+        System.out.println(resultado);
+
+        System.out.println("--------------------------------");
     }
 }
