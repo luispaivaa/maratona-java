@@ -3,9 +3,10 @@ package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 import java.util.Arrays;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salarios;
+    private String nome;
+    private int idade;
+    private double[] salarios;
+    private double media;
 
     @Override
     public String toString() {
@@ -14,6 +15,34 @@ public class Funcionario {
                 ", idade=" + idade +
                 ", salarios=" + Arrays.toString(salarios) +
                 '}';
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getSalarios() {
+        return Arrays.toString(this.salarios);
+    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+    public double getMedia() {
+        return media;
     }
 
     public void imprimeDados(){
@@ -34,7 +63,7 @@ public class Funcionario {
     }
 
     public void imprimeMediaSalarial(){
-        if(salarios.length <= 2 || salarios == null){
+        if(salarios.length <= 2){
             System.out.println("Informe pelo menos 3 salários!");
             return;
         }
@@ -43,7 +72,7 @@ public class Funcionario {
         for (double salario : this.salarios){
             soma += salario;
         }
-        double media = soma / this.salarios.length;
+         this.media = soma / this.salarios.length;
 
         System.out.println("----------------------");
         System.out.println("A média salarial de " + this.nome + " é: R$ " + media);
