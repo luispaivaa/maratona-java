@@ -1,7 +1,5 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 public class Pessoa {
     protected String nome;
     protected String cpf;
