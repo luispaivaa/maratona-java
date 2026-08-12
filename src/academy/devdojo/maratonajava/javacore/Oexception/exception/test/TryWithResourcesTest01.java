@@ -15,7 +15,7 @@ public class TryWithResourcesTest01 {
              Leitor2 leitor2 = new Leitor2();) {
 
         } catch (IOException e) {
-
+            e.printStackTrace();
         }
     }
 
