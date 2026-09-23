@@ -1,0 +1,19 @@
+Testando FileWriterTestando FileWriter
+Quebra de linha com FileWriter
+FileWriter fw = new FileWriter(file,true). O parâmetro true faz com que toda vez que a classe for executada, seja escrito no arquivo-02.txt, toda a String do método 'fw.write()'
+Sem o true, ele apaga e escreve tudo de novo sempre que a classe é executada.Testando FileWriter
+Quebra de linha com FileWriter
+FileWriter fw = new FileWriter(file,true). O parâmetro true faz com que toda vez que a classe for executada, seja escrito no arquivo-02.txt, toda a String do método 'fw.write()'
+Sem o true, ele apaga e escreve tudo de novo sempre que a classe é executada.Testando FileWriter
+Quebra de linha com FileWriter
+FileWriter fw = new FileWriter(file,true). O parâmetro true faz com que toda vez que a classe for executada, seja escrito no arquivo-02.txt, toda a String do método 'fw.write()'
+Sem o true, ele apaga e escreve tudo de novo sempre que a classe é executada.Testando FileWriter
+Quebra de linha com FileWriter
+FileWriter fw = new FileWriter(file,true). O parâmetro true faz com que toda vez que a classe for executada, seja escrito no arquivo-02.txt, toda a String do método 'fw.write()'
+Sem o true, ele apaga e escreve tudo de novo sempre que a classe é executada.Testando FileWriter
+Quebra de linha com FileWriter
+FileWriter fw = new FileWriter(file,true). O parâmetro true faz com que toda vez que a classe for executada, seja escrito no arquivo-02.txt, toda a String do método 'fw.write()'
+Sem o true, ele apaga e escreve tudo de novo sempre que a classe é executada.Testando FileWriter
+Quebra de linha com FileWriter
+FileWriter fw = new FileWriter(file,true). O parâmetro true faz com que toda vez que a classe for executada, seja escrito no arquivo-02.txt, toda a String do método 'fw.write()'
+Sem o true, ele apaga e escreve tudo de novo sempre que a classe é executada.
