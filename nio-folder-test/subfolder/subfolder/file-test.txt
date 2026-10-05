@@ -1,0 +1,2 @@
+teste de cópia.
+Tudo que for digitado em file-test.txt será copiado em renamed-nio-file.txt.
