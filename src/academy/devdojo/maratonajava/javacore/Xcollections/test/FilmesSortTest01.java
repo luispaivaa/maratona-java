@@ -1,10 +1,12 @@
 package academy.devdojo.maratonajava.javacore.Xcollections.test;
 
+import academy.devdojo.maratonajava.javacore.Xcollections.domain.Filme;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ListSortTest01 {
+public class FilmesSortTest01 {
     public static void main(String[] args) {
         List<String> filmes = new ArrayList<>();
         filmes.add("Uma Noite no Museu");

@@ -7,7 +7,7 @@ public class Filme implements Comparable<Filme> {
     private String titulo;
     private double preco;
 
-    public Filme(long id, String titulo, double preco) {
+    public Filme(Long id, String titulo, double preco) {
         Objects.requireNonNull(id, "Id não poder ser null");
         Objects.requireNonNull(titulo, "Título não pode ser null");
         this.id = id;
@@ -36,11 +36,11 @@ public class Filme implements Comparable<Filme> {
                 '}';
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
