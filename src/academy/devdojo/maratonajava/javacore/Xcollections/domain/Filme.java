@@ -2,12 +2,12 @@ package academy.devdojo.maratonajava.javacore.Xcollections.domain;
 
 import java.util.Objects;
 
-public class Filmes {
-    private long id;
+public class Filme implements Comparable<Filme> {
+    private Long id;
     private String titulo;
     private double preco;
 
-    public Filmes(long id, String titulo, double preco) {
+    public Filme(long id, String titulo, double preco) {
         Objects.requireNonNull(id, "Id não poder ser null");
         Objects.requireNonNull(titulo, "Título não pode ser null");
         this.id = id;
@@ -18,7 +18,7 @@ public class Filmes {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Filmes filmes = (Filmes) o;
+        Filme filmes = (Filme) o;
         return id == filmes.id && Double.compare(preco, filmes.preco) == 0 && Objects.equals(titulo, filmes.titulo);
     }
 
@@ -29,7 +29,7 @@ public class Filmes {
 
     @Override
     public String toString() {
-        return "Filmes{" +
+        return "Filme{" +
                 "id=" + id +
                 ", titulo='" + titulo + '\'' +
                 ", preco=" + preco +
@@ -58,5 +58,29 @@ public class Filmes {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public int compareTo(Filme outroFilme) {
+        /*
+        * negativo se o this < outroFilme
+        * se this == outroFilme, return 0
+        * positivo se this > outroFilme
+        * */
+
+        // ORDENAÇÃO PELO ID:
+//        if(this.id < outroFilme.getId()){
+//            return -1;
+//        } else if (this.id.equals(outroFilme.getId())) {
+//            return 0;
+//        } else {
+//            return 1;
+//        }
+
+        //ORDENAÇÃO POR TÍTULO:
+//        return this.titulo.compareTo(outroFilme.getTitulo());
+
+        //ORDENAÇÃO POR PREÇO:
+        return Double.compare(this.preco, outroFilme.getPreco());
     }
 }
