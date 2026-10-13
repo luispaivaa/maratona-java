@@ -26,21 +26,21 @@ public class Filme implements Comparable<Filme> {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Filme filmes = (Filme) o;
-        return id == filmes.id && Double.compare(preco, filmes.preco) == 0 && Objects.equals(titulo, filmes.titulo);
+        Filme filme = (Filme) o;
+        return Objects.equals(id, filme.id) && Objects.equals(titulo, filme.titulo);
     }
 
-    public int getQuantidade() {
-        return quantidade;
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, titulo);
     }
 
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, titulo, preco);
+    public int getQuantidade() {
+        return quantidade;
     }
 
     @Override
