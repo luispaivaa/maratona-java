@@ -95,9 +95,9 @@ public class Filme implements Comparable<Filme> {
 //        }
 
         //ORDENAÇÃO POR TÍTULO:
-//        return this.titulo.compareTo(outroFilme.getTitulo());
+        return this.titulo.compareTo(outroFilme.getTitulo());
 
         //ORDENAÇÃO POR PREÇO:
-        return Double.compare(this.preco, outroFilme.getPreco());
+//        return Double.compare(this.preco, outroFilme.getPreco());
     }
 }

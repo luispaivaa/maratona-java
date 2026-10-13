@@ -17,6 +17,7 @@ public class Smartphone {
     * Consistente: x.equals(x) sempre retorna true se x for diferente de null
     * para x diferente de null, x.equals(null) tem que retornar false
     * */
+
     @Override //personalizando e sobreescrevendo o equals()
     public boolean equals(Object obj) {
         if (obj == null) return false;
