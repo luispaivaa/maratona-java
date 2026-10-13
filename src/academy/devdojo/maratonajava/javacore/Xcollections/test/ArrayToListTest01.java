@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Xcollections.test;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,7 +31,7 @@ public class ArrayToListTest01 {
         numerosList.add(15);
         System.out.println(numerosList);
 
-        
+
 
     }
 }

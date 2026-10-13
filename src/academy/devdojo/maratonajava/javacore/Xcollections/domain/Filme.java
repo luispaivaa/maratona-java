@@ -6,6 +6,7 @@ public class Filme implements Comparable<Filme> {
     private Long id;
     private String titulo;
     private double preco;
+    private int quantidade;
 
     public Filme(Long id, String titulo, double preco) {
         Objects.requireNonNull(id, "Id não poder ser null");
@@ -15,11 +16,26 @@ public class Filme implements Comparable<Filme> {
         this.preco = preco;
     }
 
+    public Filme(Long id, String titulo, double preco, int quantidade) {
+        this.id = id;
+        this.titulo = titulo;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Filme filmes = (Filme) o;
         return id == filmes.id && Double.compare(preco, filmes.preco) == 0 && Objects.equals(titulo, filmes.titulo);
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     @Override
@@ -33,6 +49,7 @@ public class Filme implements Comparable<Filme> {
                 "id=" + id +
                 ", titulo='" + titulo + '\'' +
                 ", preco=" + preco +
+                ", quantidade=" + quantidade +
                 '}';
     }
 
