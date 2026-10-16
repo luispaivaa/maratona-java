@@ -48,6 +48,6 @@ public class NavigableSetTest01 {
         System.out.println(filmes.size());
         System.out.println(filmes.pollFirst());
         System.out.println(filmes.size());
-        
+
     }
 }

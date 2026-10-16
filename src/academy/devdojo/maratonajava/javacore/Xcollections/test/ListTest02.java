@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Xcollections.test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListTes02 {
+public class ListTest02 {
     public static void main(String[] args) {
         List<String> carros = new ArrayList<>();
         carros.add("Camaro");
