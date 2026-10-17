@@ -4,11 +4,12 @@ import academy.devdojo.maratonajava.javacore.Xcollections.domain.Consumidor;
 import academy.devdojo.maratonajava.javacore.Xcollections.domain.Filme;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class MapTest02 {
     public static void main(String[] args) {
-        Map<Consumidor, Filme> consumidorFilmeMap = new HashMap<>();
+        Map<Consumidor, Filme> consumidorFilmeMap = new LinkedHashMap<>(); // LinkedHashMap preserva ordem de inserção
         Consumidor consumidor1 = new Consumidor("Luis Henrique");
         Consumidor consumidor2 = new Consumidor("Zé Bedeu");
 
