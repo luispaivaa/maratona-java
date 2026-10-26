@@ -3,7 +3,6 @@ package academy.devdojo.maratonajava.javacore.Ygenerics.test;
 import academy.devdojo.maratonajava.javacore.Ygenerics.dominio.Barco;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class MetodoGenericoTest01 {
