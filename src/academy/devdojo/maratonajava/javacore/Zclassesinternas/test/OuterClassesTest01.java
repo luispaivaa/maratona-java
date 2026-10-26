@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Zclassesinternas.test;
 
 public class OuterClassesTest01 {
     private String name = "Vegeta";
-// classes aninhadas
+// inner classes
     class Inner {
         public void printOuterClassAttribute(){
             System.out.println(name);
