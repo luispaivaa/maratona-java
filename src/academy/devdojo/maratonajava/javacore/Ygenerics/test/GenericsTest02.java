@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Ygenerics.test;
 
+import java.util.Scanner;
+
 class Pair<K, V>{
     private K key;
     private V value;
@@ -20,5 +22,7 @@ public class GenericsTest02 {
         Pair<Integer, String> pair = new Pair<>(433, "Java");
         System.out.println("Key: " + pair.getKey() + " - Instace of: " + pair.getKey().getClass());
         System.out.println("Value: " + pair.getValue() + " - Instance of: " + pair.getValue().getClass());
+
+        Scanner scanner = new Scanner(System.in);
     }
 }
