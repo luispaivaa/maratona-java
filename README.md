@@ -15,9 +15,10 @@ Como material de estudo estou usando a playlist do YouTube **"Maratona Java Vira
 1. [Como funciona a compilação do Java](#1-como-funciona-a-compilação-do-java)
 2. [Introdução](#2-introdução)
 3. [Java Core](#3-java-core)
-4. [Xcollections (onde estou)](#4-xcollections-onde-estou)
-5. [Progresso](#5-progresso)
-6. [Como rodar os exemplos](#6-como-rodar-os-exemplos)
+4. [ZZDstreams](#4-xcollections)
+5. [Estudos após Collections (onde estou)](#5-estudos-apos-collections-onde-estou)
+6. [Progresso](#6-progresso)
+7. [Como rodar os exemplos](#7-como-rodar-os-exemplos)
 
 ---
 
@@ -26,13 +27,21 @@ Como material de estudo estou usando a playlist do YouTube **"Maratona Java Vira
 ```
 src/academy/devdojo/maratonajava/
 ├── introducao/          # Aulas 01 a 08 (fundamentos da linguagem)
-└── javacore/
-    ├── Aintroducaoclasses/
-    ├── Bintroducaometodos/
-    ├── ...
-    └── Xcollections/
-        ├── domain/      # classes de modelo (Filme, Pessoa, Smartphone)
-        └── test/        # classes com main() para testar cada conceito
+├── javacore/
+│   ├── Aintroducaoclasses/
+│   ├── Bintroducaometodos/
+│   ├── ...
+│   ├── Xcollections/
+│   │   ├── domain/      # classes de modelo (Filme, Pessoa, Smartphone)
+│   │   └── test/        # classes com main() para testar cada conceito
+│   ├── Ygenerics/
+│   ├── Zclassesinternas/
+│   ├── ZZAcomportamentos/
+│   ├── ZZBlambdas/
+│   ├── ZZCoptional/
+│   └── ZZDstreams/      # tópico atual
+└── javaextra/
+    └── Aasync/          # estudos de CompletableFuture
 ```
 
 Cada tópico do `javacore` segue o mesmo padrão: uma pasta `dominio` (ou `domain`) com as classes e uma pasta `test` com as classes que têm o método `main` para executar os exemplos. As pastas são prefixadas por letras (A, B, C...) para manter a ordem em que as aulas foram estudadas.
@@ -213,7 +222,13 @@ Pacote: `academy.devdojo.maratonajava.javacore`
 | `Uregex` | Expressões regulares (`Pattern` e `Matcher`) |
 | `Vio` | Entrada e saída de arquivos (`java.io`) |
 | `Wnio` | `java.nio` (`Path`, `Files`) |
-| `Xcollections` | Collections Framework ← **estou aqui** |
+| `Xcollections` | Collections Framework |
+| `Ygenerics` | Generics, classes e métodos genéricos, wildcards |
+| `Zclassesinternas` | Classes internas, locais, anônimas e aninhadas estáticas |
+| `ZZAcomportamentos` | Parametrização de comportamentos |
+| `ZZBlambdas` | Lambdas, interfaces funcionais e method references |
+| `ZZCoptional` | `Optional` |
+| `ZZDstreams` | Stream API ← **estou aqui** |
 
 ### A. Introdução a classes
 
@@ -618,7 +633,7 @@ Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
 
 ---
 
-## 4. Xcollections (onde estou)
+## 4. Xcollections
 
 Pasta: `javacore/Xcollections` (classes de modelo em `domain/`, testes em `test/`).
 
@@ -827,7 +842,17 @@ System.out.println(letras.contains("D"));    // true
 
 ---
 
-## 5. Progresso
+## 5. Estudos após Collections (onde estou)
+
+Depois de Collections, avancei por Generics, classes internas, parametrização de comportamentos, lambdas, method references e `Optional`. Agora estou estudando a Stream API em `javacore/ZZDstreams`.
+
+Os exemplos atuais de Streams praticam ordenação, filtragem, limite de resultados, `map`, `flatMap`, `distinct`, contagem e `forEach`, incluindo operações sobre listas aninhadas e dados de empresas e funcionários.
+
+Também existe a pasta `javaextra/Aasync` para estudos de `CompletableFuture`; esse conteúdo ainda está por desenvolver.
+
+---
+
+## 6. Progresso
 
 - [x] Compilação do Java
 - [x] Introdução (aulas 01 a 08)
@@ -854,13 +879,20 @@ System.out.println(letras.contains("D"));    // true
 - [x] U. Regex
 - [x] V. IO
 - [x] W. NIO
-- [ ] **X. Collections** (em andamento: `List`, `equals`/`hashCode`, `Comparable`/`Comparator`, `binarySearch`, `Iterator`, `Set` e `NavigableSet` já feitos)
+- [x] X. Collections (`List`, `equals`/`hashCode`, `Comparable`/`Comparator`, `binarySearch`, `Iterator`, `Set` e `NavigableSet`)
+- [x] Y. Generics (classes e métodos genéricos, wildcards)
+- [x] Z. Classes internas, locais, anônimas e aninhadas estáticas
+- [x] ZZ A. Parametrização de comportamentos
+- [x] ZZ B. Lambdas e method references
+- [x] ZZ C. `Optional`
+- [ ] **ZZ D. Streams** (em andamento)
+- [ ] Java Extra: Async (`CompletableFuture`)
 
 > Os próximos tópicos serão adicionados aqui conforme eu avançar nas aulas.
 
 ---
 
-## 6. Como rodar os exemplos
+## 7. Como rodar os exemplos
 
 1. Clone o repositório:
    ```bash
